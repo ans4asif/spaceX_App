@@ -1,0 +1,23 @@
+.images_list{
+    display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  padding-bottom: 100px;
+
+}
+.images{
+    width: 100%;
+}
+.launch-details{
+  background-color: black;
+}
+h1{
+  color: wheat;
+}
+p{
+  color: white;
+}
+span{
+  color: blanchedalmond;
+}

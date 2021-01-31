@@ -1,12 +1,12 @@
 import React from 'react';
 import {useLaunchesQuery} from '../../generated/graphql';
 import  Launch from './Launch';
+// import {OwnProps} from './Launch'
 
-const LaunchContainer = () => {
+const LaunchContainer=() => {
    
     const {data,error,loading} = useLaunchesQuery();
-    console.log(data);
-
+   console.log(data)
     if (loading){
         <h3>Data is loading</h3>
     }

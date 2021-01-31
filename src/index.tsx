@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ApolloProvider,InMemoryCache,ApolloClient} from '@apollo/client'
-
+import {BrowserRouter as Router} from 'react-router-dom';
 const client=new ApolloClient({
   uri:'https://spacexdata.herokuapp.com/graphql',
   cache:new InMemoryCache()
@@ -12,7 +12,9 @@ const client=new ApolloClient({
 
 ReactDOM.render(
  <ApolloProvider client={client}> 
+ <Router>
    <App />
+   </Router>
    </ApolloProvider>
   ,
   document.getElementById('root')
