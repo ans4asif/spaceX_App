@@ -9,13 +9,13 @@ import { CircularProgress } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
-    },
+     marginTop:'5px'  ,
+    marginLeft:'5px'  },
     paper: {
-        padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
-    },
+        padding:'12px 38px 11px 13px',
+        background: '#9b9ba5fa' },
 }));
 
 // export interface OwnProps{
@@ -33,8 +33,10 @@ const Launch: React.FC<Props> = ({ data }) => {
     if (data) {
         return (
             <div className="list_wrapper">
+                
                 <h3 className="font">All SpaceX Launches</h3>
-                <Grid container spacing={3}>
+                <div style={{marginRight:'35px'}}>
+                <Grid container spacing={3} className={classes.root}>
                     {!!data.launches && data.launches.map(
                         (launch, ind) => !!launch && (
                             <Grid item xs={12} sm={4} key={ind}>
@@ -50,6 +52,7 @@ const Launch: React.FC<Props> = ({ data }) => {
                             </Grid>
                         )
                     )}
+                    
                     {/* <ul className="list">
                 {!!data.launches && data.launches.map(
                   (launch, ind) => !!launch && (
@@ -60,7 +63,8 @@ const Launch: React.FC<Props> = ({ data }) => {
                     )}
                 </ul> */}
                 </Grid>
-
+                </div>
+              
             </div>
         )
     }

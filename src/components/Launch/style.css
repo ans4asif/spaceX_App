@@ -15,18 +15,40 @@
 .font .name{
     color: black;
 }
+.font{
+    font-size: xx-large;
+    color: white;
+    padding-top: 21px;
+    padding-left: 24px;
+}
 .year{
+    color: black;
+}
+.name{
     color: black;
 }
 .btn{
     background-color: rgb(183, 140, 231);
     color:rgb(0, 0, 0);
+    border-radius: 13px;
+    padding: 7px;
+    width: 90px;
+    text-align: center;
+    border: solid #322565;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(105, 5, 80);
+    color: white;
+    
 }
 .red{
-    color:rgb(241, 79, 79)
+    color:rgb(224, 40, 40)
 }
 .green{
-    color:rgb(43, 139, 43)
+    color:rgb(3, 73, 3)
 }
 .progress{
     margin-top: 12%;
