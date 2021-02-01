@@ -6,7 +6,7 @@ import  Launch from './Launch';
 const LaunchContainer=() => {
    
     const {data,error,loading} = useLaunchesQuery();
-   console.log(data)
+    
     if (loading){
         <h3>Data is loading</h3>
     }

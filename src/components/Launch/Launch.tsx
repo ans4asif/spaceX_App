@@ -27,7 +27,6 @@ interface Props {
 
 const Launch: React.FC<Props> = ({ data }) => {
     const classes = useStyles();
-    console.log(data);
 
 
     if (data) {

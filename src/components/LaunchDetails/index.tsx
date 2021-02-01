@@ -1,4 +1,4 @@
-import React ,{useEffect} from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import {useLaunchInfoQuery} from '../../generated/graphql';
 import LaunchDetails from './LaunchDetails'
@@ -10,13 +10,10 @@ import LaunchDetails from './LaunchDetails'
 const LaunchDetailsContainer = () =>{
     let {id}= useParams();
 
-    const { data, loading, error ,refetch} = useLaunchInfoQuery({
+    const { data, loading, error } = useLaunchInfoQuery({
         variables: {id: String(id)},
       });
-      useEffect(()=>{
-    refetch()
-      }
-      ,[id])
+      
       
     if (loading){
         <h3>Data is loading</h3>

@@ -43,7 +43,7 @@ export default function NavBar() {
           <IconButton >
               <img src={astro} alt="astronaut" className={classes.astronautLogo}></img>
           </IconButton>
-            <img src={spacex} className={classes.spacexLogo}/> 
+            <img src={spacex} className={classes.spacexLogo} alt="spacex logo"/> 
             <Link to="/">
             <Button variant="outlined" color="secondary">Launches</Button>
             </Link>
